@@ -7,15 +7,18 @@
 import React, { Component } from 'react';
 import {
   Text,
-  View
+  View,
+  TextInput
 } from 'react-native';
-
-import RootStack from './RootStack';
 
 export default class App extends Component<{}> {
   render() {
     return (
-     <RootStack/>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Enter Text : </Text>
+        <TextInput
+          style={{width: 200, height: 40}}/>
+      </View>
     );
   }
 }
